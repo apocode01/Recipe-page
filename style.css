@@ -123,7 +123,7 @@ body {
 
 .container ol li {
     font-family: 'Outfit', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     color: var(--stone600);
     margin-bottom: 0.5rem;
 }
@@ -133,11 +133,64 @@ body {
     font-weight: 700;
 }
 
+.container table {
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container td {
+    border-bottom: solid 0.1px var(--stone150);
+    padding-left: 2rem;
+    height: 3rem;
+}
+
+.container tr:last-child td {
+    border-bottom: none;
+}
+
+.container .name {
+    color: var(--stone600);
+    font-weight: 400;
+}
+
+.container .value {
+    font-weight: 700;
+    color: var(--brown800);
+}
+
 .attribution { 
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
     font-size: 11px; 
     text-align: center; 
 }
     
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 0;
+    }
+
+    .container {
+        width: 100vw;
+        padding: 0;
+    }
+
+    .container .content {
+        padding: 2rem;
+    }
+
+    .container img {
+        border-radius: 0;
+        max-width: 100%;
+        margin-bottom: -1rem;
+    }
+
+    .attribution {
+        margin-bottom: 2rem;
+    }
 }
