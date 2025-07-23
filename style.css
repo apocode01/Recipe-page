@@ -1,0 +1,143 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+    --brown800: hsl(14, 45%, 36%);
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--stone100);
+    font-size: 16px;
+    padding: 5rem;
+    min-height: calc(100vh - 1px);
+}
+
+.container {
+    background-color: var(--white);
+    width: 700px;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    margin-bottom: 2rem;
+}
+
+.container img {
+    border-radius: 0.625rem;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.container h1 {
+    font-family: 'YoungSerif', sans-serif;
+    font-weight: 400;
+    color: var(--stone900);
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: var(--stone600);
+    margin-bottom: 1rem;
+}
+
+.container ul, .container ol {
+    padding-left: 1.5rem;
+}
+
+.container li {
+    list-style-position: outside;
+    padding-left: 1rem;
+}
+
+.container .bold {
+    font-weight: 700;
+}
+
+.container .prep {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--rose50);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.625rem;
+}
+
+.container .prep h3 {
+    font-weight: 700;
+    color: var(--rose800);
+}
+
+.container .prep li {
+    margin-top: 0.5rem;
+    color: var(--brown800);
+}
+
+.container h2 {
+    font-family: 'YoungSerif', sans-serif;
+    font-weight: 400;
+    color: var(--brown800);
+    margin-bottom: 1rem;
+}
+
+.container .ingredients li {
+    font-family: 'Outfit', sans-serif;
+    color: var(--stone600);
+    margin-bottom: 0.5rem;
+}
+
+.container .ingredients li::marker {
+    color: var(--brown800);
+}
+
+.container hr {
+    border: none;
+    height: 0.1px;
+    background-color: var(--stone150);
+    margin: 1.5em 0;
+}
+
+.container ol li {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400px;
+    color: var(--stone600);
+    margin-bottom: 0.5rem;
+}
+
+.container ol li::marker {
+    color: var(--brown800);
+    font-weight: 700;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
